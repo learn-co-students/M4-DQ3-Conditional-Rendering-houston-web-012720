@@ -13,22 +13,26 @@ const MenuBar = (props) => {
 
   */
 
+  let handleClick = (e) => {
+    return props.changeDisplay(e.target.id)
+  }
+
   return (
     <div className="ui four item menu">
-      <a className="item active" id="profile">
+      <a className="item active" id="profile" onClick={handleClick}>
         <i className="user large icon" id="profile"/>
       </a>
 
       <a className="item" id="photo">
-        <i className="photo large icon" id="photo"/>
+        <i className="photo large icon" id="photo" onClick={handleClick}/>
       </a>
 
       <a className="item" id="cocktail">
-        <i className="cocktail large icon" id="cocktail"/>
+        <i className="cocktail large icon" id="cocktail" onClick={handleClick}/>
       </a>
 
       <a className="item" id="pokemon"> 
-        <i className=" themeisle large icon" id="pokemon"/>
+        <i className=" themeisle large icon" id="pokemon" onClick={handleClick}/>
       </a>
     </div>
   )
