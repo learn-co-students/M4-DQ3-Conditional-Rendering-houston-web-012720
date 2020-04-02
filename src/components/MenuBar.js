@@ -15,19 +15,19 @@ const MenuBar = (props) => {
 
   return (
     <div className="ui four item menu">
-      <a className="item active" id="profile">
+      <a className="item active" id="profile" onClick={(e) => {props.changePage(e)}}>
         <i className="user large icon" id="profile"/>
       </a>
 
-      <a className="item" id="photo">
+      <a className="item" id="photo" onClick={(e) => {props.changePage(e)}}>
         <i className="photo large icon" id="photo"/>
       </a>
 
-      <a className="item" id="cocktail">
+      <a className="item" id="cocktail" onClick={(e) => {props.changePage(e)}}>
         <i className="cocktail large icon" id="cocktail"/>
       </a>
 
-      <a className="item" id="pokemon"> 
+      <a className="item" id="pokemon" onClick={(e) => {props.changePage(e)}}> 
         <i className=" themeisle large icon" id="pokemon"/>
       </a>
     </div>
