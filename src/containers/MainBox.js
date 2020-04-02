@@ -55,7 +55,6 @@ class MainBox extends React.Component {
     return (
       <div>
         <MenuBar changePage={this.changePage} />
-        {/* {asdf} */}
         {component}
       </div>
     )
